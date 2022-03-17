@@ -1,0 +1,30 @@
+{% extends 'main/layout.html' %}
+{% block title %}
+    Homepage
+{% endblock %}
+{% block content %}
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'main/home.css' %}">
+
+    {% if form.errors %}
+        <p>Your Username or Password is incorrect</p>
+    {% endif %} 
+    <form method="post" action="{% url 'dashboard' %}">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <h3>Login Here</h3>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Email or Phone" id="username">
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password">
+
+        <button type="submit">Log In</button>
+
+    </form>
+
+
+{% endblock content %}
+

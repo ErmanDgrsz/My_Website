@@ -1,0 +1,29 @@
+body{
+   background-color: #cad0db;
+}
+
+.blue-btn button  {
+    color: white;
+    text-decoration:none;
+    text-align: center;
+    display:block;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.navbar-brand   {
+    color: aliceblue;
+    font-family: Arial, sans-serif;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 400px;
+    padding-bottom: 400px;
+
+}
